@@ -1,2 +1,2 @@
 # UnityAppIcon
-Change app icon in script.
+Change app icon for Android/iOS platform in script.
