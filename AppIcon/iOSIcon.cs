@@ -10,11 +10,11 @@ namespace Builder.AppIcon
         BuildTargetGroup IPlatformIcon.Target => BuildTargetGroup.iOS;
         PlatformIconKind IPlatformIcon.IconKind => UnityEditor.iOS.iOSPlatformIconKind.Application;
 
-        void IPlatformIcon.SetIconTexture(PlatformIcon[] appIcons, Texture2D texture)
+        void IPlatformIcon.SetIconTexture(PlatformIcon[] inAppIcons, Texture2D inTexture)
         {
-            for (int i = 0; i < appIcons.Length; i++)
+            for (int i = 0; i < inAppIcons.Length; i++)
             {
-                appIcons[i].SetTexture(texture);
+                inAppIcons[i].SetTexture(inTexture);
             }
         }
         #endregion
