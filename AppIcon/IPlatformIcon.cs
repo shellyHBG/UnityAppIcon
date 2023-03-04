@@ -7,6 +7,6 @@ namespace Builder.AppIcon
     {
         BuildTargetGroup Target { get; }
         PlatformIconKind IconKind { get; }
-        void SetIconTexture(PlatformIcon[] appIcons, Texture2D texture);
+        void SetIconTexture(PlatformIcon[] inAppIcons, Texture2D inTexture);
     }
 }
