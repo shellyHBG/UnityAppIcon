@@ -10,13 +10,13 @@ namespace Builder.AppIcon
         BuildTargetGroup IPlatformIcon.Target => BuildTargetGroup.Android;
         PlatformIconKind IPlatformIcon.IconKind => Android.AndroidPlatformIconKind.Adaptive;
 
-        void IPlatformIcon.SetIconTexture(PlatformIcon[] appIcons, Texture2D texture)
+        void IPlatformIcon.SetIconTexture(PlatformIcon[] inAppIcons, Texture2D inTexture)
         {
-            for (int i = 0; i < appIcons.Length; i++)
+            for (int i = 0; i < inAppIcons.Length; i++)
             {
                 // set foreground and background texture
-                appIcons[i].SetTexture(texture, 0);
-                appIcons[i].SetTexture(texture, 1);
+                inAppIcons[i].SetTexture(inTexture, 0);
+                inAppIcons[i].SetTexture(inTexture, 1);
             }
         }
         #endregion
